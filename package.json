@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "run": "node ./bin/tsc.js",
-    "test:unit": "nyc mocha -r ts-node/register src/*.spec.ts",
+    "test:unit": "nyc mocha -r ts-node/register test/*.spec.ts",
     "test:coverage": "npm run-script test:unit && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "nyc": {
