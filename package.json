@@ -1,0 +1,29 @@
+{
+  "name": "mocha_test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "run": "node ./bin/tsc.js",
+    "test": "nyc mocha -r ts-node/register src/*.spec.ts"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ]
+  },
+  "author": "utsavgupta89@gmail.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "source-map-support": "^0.5.6",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.1"
+  }
+}
