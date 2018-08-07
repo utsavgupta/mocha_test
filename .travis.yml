@@ -2,4 +2,4 @@ language: node_js
 install:
   - npm install
 script:
-  - npm test:coverage
+  - npm run-script test:coverage
